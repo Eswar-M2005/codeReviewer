@@ -1,0 +1,18 @@
+[tool.codereviewer]
+
+severity_threshold = "INFO"   # INFO | WARNING | ERROR
+
+exclude_paths = [
+    "venv/",
+    ".venv/",
+    "__pycache__/",
+    "tests/"
+]
+
+rules = [
+    "unused_variable",
+    "missing_docstring",
+    "long_function",
+    "too_many_arguments",
+    "poor_function_name"
+]
