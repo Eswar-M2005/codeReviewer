@@ -10,4 +10,4 @@ def process_data(a, b, c, d, e,f):
             total += i
         print(total)
     except:
-        pass
+        passtest
