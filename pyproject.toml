@@ -1,0 +1,29 @@
+[tool.codereviewer]
+
+# Minimum severity required to fail commit
+# INFO  -> Fail on any issue
+# WARNING -> Fail only on warnings + errors
+# ERROR -> Fail only on errors
+severity_threshold = "WARNING"
+
+# Files & folders to ignore during scan
+exclude_paths = [
+    "venv/",
+    ".venv/",
+    "__pycache__/",
+    "tests/",
+    "modules/",
+    "reviewer.py",
+    "streamlit_app.py"
+]
+
+# Enabled detection rules
+rules = [
+    "unused_variable",
+    "missing_docstring",
+    "long_function",
+    "too_many_arguments",
+    "poor_function_name",
+    "bare_except",
+    "magic_number"
+]

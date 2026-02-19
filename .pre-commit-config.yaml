@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: code-reviewer
+        name: AI Code Reviewer
+        entry: python3 reviewer.py scan
+        language: system
+        types: [python]
